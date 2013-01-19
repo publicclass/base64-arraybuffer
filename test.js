@@ -1,5 +1,11 @@
+try {
+// mocha command line
 var base64 = require('./index')
   , expect = require('expect.js');
+} catch(e){
+// mocha browser
+var base64 = require('base64-arraybuffer')
+}
 
 function buf(str){
   var buffer = new ArrayBuffer(str.length);
