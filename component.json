@@ -2,7 +2,7 @@
   "name": "base64-arraybuffer",
   "repo": "publicclass/base64-arraybuffer",
   "description": "Encode/decode base64 data into ArrayBuffers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {},
   "development": {},

@@ -1,19 +1,40 @@
 # base64-arraybuffer
 
-Encode/decode base64 data into ArrayBuffers
+Encode/decode base64 data into ArrayBuffers.
 
-## Getting Started
-Install the module with: `npm install base64-arraybuffer`
+This is a [component.js](https://github.com/component) port of Niklas von Hertzen's [original version on npm](https://github.com/niklasvh/base64-arraybuffer).
+
+## Installation
+
+    $ component install publicclass/base64-arraybuffer
+
 
 ## API
-The library encodes and decodes base64 to and from ArrayBuffers
 
- - __encode(buffer)__ - Encodes `ArrayBuffer` into base64 string
- - __decode(str)__ - Decodes base64 string to `ArrayBuffer`
+### base64.encode(buffer)
 
-## Release History
-0.1.0 - Initial version, basic decode/encode base64 to and from ArrayBuffer
+Encodes ArrayBuffer into a base64 string.
+
+### base64.decode(string)
+
+Decodes base64 string to ArrayBuffer.
+
+## Example
+
+  var base64 = require('base64-arraybuffer');
+
+  var buf = new Uint8Array(4);
+  buf[0] = 1;
+  buf[1] = 2;
+  buf[2] = 3;
+  buf[3] = 4;
+  base64.encode(buf)
+  //= 'AQIDBA=='
+
+  base64.decode('AQIDBA==')
+  //= ArrayBuffer(4)
+
 
 ## License
-Copyright (c) 2012 Niklas von Hertzen
-Licensed under the MIT license.
+
+  MIT
