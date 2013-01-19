@@ -21,15 +21,15 @@
       "url": "https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/base64-arraybuffer",
   "engines": {
     "node": ">= 0.6.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": ""
   },
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "expect.js": "~0.2.0",
+    "mocha": "~1.8.1"
   },
   "keywords": []
 }
