@@ -37,6 +37,15 @@ describe('base64-arraybuffer',function(){
       expect(base64.encode(new ArrayBuffer(0))).to.equal('')
     })
 
+    it('1234',function(){
+      var buf = new Uint8Array(4);
+      buf[0] = 1;
+      buf[1] = 2;
+      buf[2] = 3;
+      buf[3] = 4;
+      expect(base64.encode(buf)).to.equal('AQIDBA==')
+    })
+
     it('Hello world',function(){
       expect(base64.encode(buf('Hello world'))).to.equal('SGVsbG8gd29ybGQ=')
     })
@@ -78,6 +87,14 @@ describe('base64-arraybuffer',function(){
       expect(base64.decode('SGVsbG8gd29ybGRzIQ==')).to.eql(buf('Hello worlds!'))
     })
 
+    it('1234',function(){
+      var buf = new Uint8Array(4);
+      buf[0] = 1;
+      buf[1] = 2;
+      buf[2] = 3;
+      buf[3] = 4;
+      expect(base64.decode('AQIDBA==')).to.eql(buf.buffer)
+    })
 
   })
 
