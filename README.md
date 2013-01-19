@@ -1,5 +1,7 @@
 # base64-arraybuffer
 
+[![Build Status](https://travis-ci.org/publicclass/base64-arraybuffer.png?branch=master)](https://travis-ci.org/publicclass/base64-arraybuffer)
+
 Encode/decode base64 data into ArrayBuffers.
 
 This is a [component.js](https://github.com/component) port of Niklas von Hertzen's [original version on npm](https://github.com/niklasvh/base64-arraybuffer).
