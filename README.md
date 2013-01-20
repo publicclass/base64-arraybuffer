@@ -23,18 +23,18 @@ Decodes base64 string to ArrayBuffer.
 
 ## Example
 
-  var base64 = require('base64-arraybuffer');
+    var base64 = require('base64-arraybuffer');
 
-  var buf = new Uint8Array(4);
-  buf[0] = 1;
-  buf[1] = 2;
-  buf[2] = 3;
-  buf[3] = 4;
-  base64.encode(buf)
-  //= 'AQIDBA=='
+    var buf = new Uint8Array(4);
+    buf[0] = 1;
+    buf[1] = 2;
+    buf[2] = 3;
+    buf[3] = 4;
+    base64.encode(buf)
+    //= 'AQIDBA=='
 
-  base64.decode('AQIDBA==')
-  //= ArrayBuffer(4)
+    base64.decode('AQIDBA==')
+    //= ArrayBuffer(4)
 
 
 ## License
